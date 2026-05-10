@@ -1,0 +1,98 @@
+
+<!-- Add this section before the closing </body> tag -->
+
+<!-- WhatsApp Floating Contact Button -->
+<a href="https://wa.me/18687890535?text=Hello!%20I%E2%80%99m%20interested%20in%20buying%20breadfruit." 
+   class="whatsapp-float" 
+   target="_blank">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Contact">
+</a>
+
+<!-- Breadfruit Sales Section -->
+<section class="contact-section">
+  <h2>Buy Fresh Tropical Breadfruit</h2>
+  <p>
+    Interested in fresh breadfruit for your home, business, or roadside shop? 
+    Click below to instantly message us on WhatsApp and place your order today.
+  </p>
+  <a class="whatsapp-btn" 
+     href="https://wa.me/18687890535?text=Hello!%20I%E2%80%99m%20interested%20in%20buying%20breadfruit." 
+     target="_blank">
+     Order on WhatsApp
+  </a>
+</section>
+
+<style>
+  .contact-section {
+    background: #ffffff;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 15px;
+    margin: 3rem auto;
+    max-width: 900px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  .contact-section h2 {
+    color: #1b4332;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .contact-section p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+
+  .whatsapp-btn {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .whatsapp-btn:hover {
+    background: #1ebe5d;
+  }
+
+  .whatsapp-float {
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .whatsapp-float img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+</style>
+
+<script>
+  // Auto-popup greeting after 8 seconds
+  setTimeout(() => {
+    const interested = confirm("Hello! Interested in buying fresh breadfruit? Click OK to contact us on WhatsApp.");
+    if (interested) {
+      window.open("https://wa.me/18687890535?text=Hello!%20I%E2%80%99m%20interested%20in%20buying%20breadfruit.", "_blank");
+    }
+  }, 8000);
+</script>
